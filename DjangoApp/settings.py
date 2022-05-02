@@ -55,10 +55,10 @@ LOGIN_REDIRECT_URL='/checkdome'
 
 AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
-    #'social_core.backends.github.GithubOAuth2',
-    #'social_core.backends.twitter.TwitterOAuth',
-    #'social_core.backends.facebook.FacebookOAuth2',
-    #'social_core.backends.google.GoogleOAuth2',
+    'social_core.backends.github.GithubOAuth2',
+    'social_core.backends.twitter.TwitterOAuth',
+    'social_core.backends.facebook.FacebookOAuth2',
+    'social_core.backends.google.GoogleOAuth2',
 ]
 SOCIAL_AUTH_GOOGLE_OAUTH2_KEY = '53230813793-tebukqn9mglfq07f45o88l2c3m4csvr4.apps.googleusercontent.com'
 SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = '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'
