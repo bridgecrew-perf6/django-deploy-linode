@@ -4,9 +4,7 @@ from multiprocessing import context
 from django.shortcuts import render,redirect
 from django.contrib.auth.models import User,auth
 from django.contrib import messages
-import re
 from django.http import HttpResponse
-import regex
 from .filters import OrderFilter
 from cisweb.models import *
 
@@ -53,8 +51,6 @@ def logout(request):
 def checkdome(request):
     current_user=request.user
     user_email=current_user.email
-    regex=r'^[A-Za-z0-9._%+-]+@dome.tu.ac.th$'
-    regex_2=r'^[A-Za-z0-9._%+-]+@staff.tu.ac.th$'
     if(re.fullmatch(regex,user_email)):
         return redirect('/profile')
     elif(re.fullmatch(regex_2,user_email)):
