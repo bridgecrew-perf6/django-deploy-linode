@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'allauth.socialaccount.providers.google',
+    'allauth.account.models.EmailAddress',
     'django_filters',
     'widget_tweaks',
 ]
