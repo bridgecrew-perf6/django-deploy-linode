@@ -40,12 +40,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'cisweb',
+    'django.contrib.sites',
     'allauth',
-    'django.contrib.sites',,
     'allauth.account',
     'allauth.socialaccount',
     'allauth.socialaccount.providers.google',
-    'allauth.account.models.EmailAddress',
     'django_filters',
     'widget_tweaks',
 ]
