@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'cisweb',
+    'allauth',
     'django.contrib.sites',,
     'allauth.account',
     'allauth.socialaccount',
